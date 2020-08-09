@@ -1,0 +1,8 @@
+build:
+  docker:
+    app: Dockerfile
+
+run:
+  web: flask run
+  micro:
+    image: web
