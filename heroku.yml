@@ -3,6 +3,7 @@ build:
     app: Dockerfile
 
 run:
-  web: flask run
+  web: python app.py
   micro:
     image: web
+    command: python app.py
